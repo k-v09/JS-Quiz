@@ -6,7 +6,8 @@
 
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    color: #333;
+    font-family: "Georgia", serif;
 }
 a {
     text-decoration: none;
@@ -20,9 +21,7 @@ header{
 
 .nav {
     width: 100%;
-    font-size: 48px;
-    color: #333;
-    font-family: "Georgia", serif;
+    font-size: 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,15 +30,34 @@ header{
 .nav-item {
     padding: 15px;
 }
-.nav ul {
-    list-style-type: none;
+
+.quiz {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
 }
-.nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+.quiz h1 {
+    text-decoration: underline;
 }
 
 
 #timer {
+    display: none;
     float: right;
+}
+
+#butt {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#question {
+    display: none;
+}
+#answer {
+    display: none;
 }
