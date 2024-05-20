@@ -6,22 +6,6 @@ const question = document.getElementById('question');
 const answers = document.getElementById('answers');
 let countdown;
 
-startButton.addEventListener('click', () => {
-    timerEL.style.display = "flex";
-    if (countdown) {
-        clearInterval(countdown);
-    }
-    countdown = setInterval(() => {
-        if (timeLeft <= 0) {
-            clearInterval(countdown);
-            timerEL.innerHTML = "Time's up!";
-        } else {
-            timerEL.innerHTML = "Time: " + timeLeft;
-        }
-        timeLeft -= 1;
-    }, 1000);
-});
-
 const quest = [
     "What is the correct syntax to create a new object in JavaScript?",
     "Which of the following is used to declare a variable in JavaScript?",
@@ -106,3 +90,25 @@ const ans = {
         1
     ]
 };
+
+function quizSeq() {
+    qnum = 1;
+}
+
+startButton.addEventListener('click', () => {
+    timerEL.style.display = "flex";
+    question.style.display = "flex";
+    answers.style.display = "flex";
+    if (countdown) {
+        clearInterval(countdown);
+    }
+    countdown = setInterval(() => {
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            timerEL.innerHTML = "Time's up!";
+        } else {
+            timerEL.innerHTML = "Time: " + timeLeft;
+        }
+        timeLeft -= 1;
+    }, 1000);
+});

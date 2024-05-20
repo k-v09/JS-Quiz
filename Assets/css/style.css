@@ -18,6 +18,10 @@ header{
     width: 100%;
     display: inline;
 }
+h1 {
+    text-decoration: underline;
+}
+
 
 .nav {
     width: 100%;
@@ -39,9 +43,6 @@ header{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: left;
-}
-.quiz h1 {
-    text-decoration: underline;
 }
 
 
